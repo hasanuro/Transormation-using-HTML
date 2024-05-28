@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.trans
+{
+    width: 300px;
+    height: 300px;
+    border: 4px solid purple;
+    text-align: center;
+    background-color: hotpink;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 300px;
+    margin-top: 100px;
+    margin-left: 500px;
+    transition-delay: 1s;
+    transition-duration: 5s;
+    /* transition-property: background; */
+    transition-property: all;
+    transition-timing-function: linear;
+}
+
+/* When I perfrom the follwoinga ction then mentioned Action should be perfromed */
+.trans:hover
+{
+    background-color: yellow;
+    border: 6px dotted orangered;
+    color: rgb(199, 30, 176);
+
+    border-radius: 50%;          /*Convert the shape of teh div*/
+    width: 600px;                /*Change the width from original to 600px */
+    /* transform: rotate(90deg);       Move around the 90 Degree */
+    transform: rotate(360deg);      /*Move around the 360 Degree */
+    /* transform: scale(2);               It's size will be increased by two time */
+    /* transform: translateX(200px);      Move the div toward the x-axis */
+    /* transform: translateY(200px);         Move the div toward the y-axis */
+    /* font-size: 20px;                         Test size decraes from 30px to 20px */
+}
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="trans">
+        Transition
+    </div>
+
+
+</body>
+</html>
